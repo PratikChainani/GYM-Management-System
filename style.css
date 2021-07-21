@@ -1,0 +1,359 @@
+:root{
+    --primary-color: #c84630;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.4;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: .75rem 0;
+}
+textarea{
+    resize: none;
+}
+
+/*Utility Classes*/
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.text-center{
+    text-align: center;
+}
+.text-primary-css{
+    color: var(--primary-color);    
+}
+.bg-light{
+    background: #F4F4F4;
+    color: #333;
+}
+.bg-primary-css{
+    background: var(--primary-color);
+    color: #333;
+}
+.bg-dark{
+    background: #333;
+    color: #FFF;
+}
+.l-heading{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+.m-heading{
+    font-size: 2rem;
+    margin-bottom: .75rem;
+    line-height: 1.1;
+}
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.btn{
+    display: inline-block;
+    color: #FFF;
+    background: var(--primary-color);
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    transition: background .3s;
+}
+.btn:hover{
+    background: rgb(145, 63, 48);
+    cursor: pointer;
+}
+
+.btn-dark{
+    background: #333;
+}
+
+.py-1{
+    padding: 1.5rem 0;
+}
+
+.py-2{
+    padding: 2rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+
+.p-1{
+    padding: 1.5rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-3{
+    padding: 3rem;
+}
+
+ul.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+ul.list li{
+    padding: .5rem 0;
+    border-bottom: dotted 2px #444;
+}
+
+/*NAVBAR*/
+#navbar{
+    background: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+    align-items: center;
+    z-index: 9999;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+#navbar ul li a{
+    color: #FFF;
+    font-size: 1.2rem;
+    padding: .75rem;
+    margin: 0 .25rem;
+    border-radius: 5px;
+    transition: background .3s;
+}
+#navbar ul li a:hover{
+    background: var(--primary-color);
+}
+.logo{
+    max-height: 70px;
+}
+.logo img{
+    height: 70px;
+    width: 350px;
+}
+
+/*Showcase Section*/
+#showcase{
+    background: url('gym.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+}
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    justify-content: center;
+}
+/*Section ABOUT*/
+#about{
+    display: flex;
+}
+#about div{
+    flex:1;
+}
+.about-img{
+    background: url('gym-reception.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/*Contact Us Section*/
+#contact{
+    display: flex;
+}
+#contact div{
+    flex: 1;
+}
+
+.form-group{
+    margin-bottom: .75rem;
+}
+
+form-gorup label{
+    display: block;
+}
+.form-group input,
+.form-group textarea{
+    padding: .5rem;
+    width: 100%;
+}
+/* =========================================
+            PRICING SECTION
+============================================ */
+#pricing{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.pricing-table{
+    padding: 32px 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    transition: all .4s linear;
+}
+.pricing-table.pricing-table-black:hover,
+.pricing-table:hover{
+    background: #c84630;
+}
+.pricing-table .type h4{
+    color: #c84630;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.pricing-table .price{
+    border-top: solid 1px #e0e0e0;
+    padding: 25px 0;
+}
+.pricing-table .price h2{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 42px;
+    font-weight: 100;
+    margin: 0 0 0 25px;
+    position: relative;
+}
+.pricing-table .price h2 span{
+    font-family: 'Raleway',sans-serif;
+}
+.pricing-table .price h2 span.dollar{
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    left: -20px;
+    top: 7px;
+}
+.pricing-table .price h2 span.month{
+    font-size: 10px;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+.pricing-table .price p{
+    line-height: normal;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+.pricing-table ul.package{
+    padding: 25px 0;
+    border-top: solid 1px #e0e0e0;
+    list-style: none;
+}
+.pricing-table ul.package li{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.pricing-table ul.package li i{
+    width: 24px;
+}
+.pricing-table:hover h4,
+.pricing-table:hover h2,
+.pricing-table:hover p,
+.pricing-table:hover ul.package{
+    color: #fff;
+}
+
+.pricing-table:hover .btn-green{
+    background: #fff;
+    color: #212226;
+    border: solid 1px #fff;
+}
+.pricing-table:hover .btn-green:hover{
+    background: #212226;
+    color: #FFF;
+    border: solid 1px #212226;
+}
+.pricing-table.pricing-table-black{
+    background: #212226;
+    color: #fff;
+}
+.pricing-table.pricing-table-black .type h4{
+    color: #fff;
+}
+/*why choose us*/
+.choseus-section {
+    background: #0a0a0a;
+    padding-bottom: 70px;
+}
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-title {
+    margin-bottom: 45px;
+    text-align: center;
+}
+.section-title span {
+    font-size: 16px;
+    color: #f36100;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.section-title h2 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+.cs-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cs-item span {
+    height: 90px;
+    width: 90px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: inline-block;
+    color: #f36100;
+    line-height: 90px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.cs-item h4 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.cs-item p {
+    font-size: 14px;
+    font-family: "Muli", sans-serif;
+    color: #a9a9a9;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+.cs-item:hover span {
+    background: #f36100;
+    color: #000000;
+}
+
+.crop-img{
+  max-height:150px;
+  max-width:100%;
+  margin-bottom: 10px;
+}
+
+.large-img{
+  max-width:50%;
+  max-height:400px;
+  display:block;
+  margin:auto;
+}

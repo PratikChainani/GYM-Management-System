@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PL Fitness Centre</title>
+    <link rel="stylesheet" href="style.css">
+       <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+       <link rel="stylesheet" href="flaticon.css" type="text/css">
+        <!--Line Icons-->
+    <link rel="stylesheet" href="line-icons/line-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    
+</head>
+<body id="home">
+       <!--    NAVBAR-->
+    <nav id="navbar">
+        <div class="logo">
+            <img src="logo.png"  alt="logo">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#facility">Facilities</a></li>
+            <li><a href="#why">Why us</a></li>
+            <li><a href="#pricing">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="login">Login</a></li>
+        </ul>
+    </nav>
+    <!--    /NAVBAR-->
+
+    <!--    HEADER SECTION-->
+    <header id="showcase">
+        <div class="showcase-content text-center">
+            <h2 class="l-heading"><span class="text-primary-css">FUEL</span> YOUR BODY FITNESS</h2>
+            <p class="lead">
+                Be One Of Us.
+            </p>
+            <div>
+                <a href="#contact" class="btn" id="joinnow">Join Now!</a>
+            </div>
+        </div>
+    </header>
+    <!--    /HEADER SECTION-->
+<!--    Who Are We?-->
+    <section id="about">
+        <div class="about-img"></div>
+        <div class="about-text bg-dark p-2">
+            <h2 class="m-heading"><span class="text-primary-css">About</span> Us</h2>
+            <p>we are dedicated to offering the best amenities, equipment, classes, programs and
+            professional staff, to help our members reach their fitness goals.<br> we assure to provide you the 
+            best ever services and will help you to achieve your fitness goals and we will take your fitness at a
+            next level with our fully professional trained trainers and diet plans. </p>
+            <h3>Our Team</h3>
+            <ul class="list">
+                <li>Laveen Dawani: Owner</li>
+                <li>Pratik Chainani: Manager</li>
+                <li>John Doe: Head Trainer</li>
+                <li>Kane Mayes: Receptionist</li>
+            </ul>
+        </div>
+    </section>
+    <!--    /Who Are We?-->
+    	<div class="container">
+		<h3>Special Equipments availiable:</h3>
+
+		<!--
+		   These are the thumbnail images.
+		   They are laid out using the 
+		   bootstrap grid.
+		   I have given them all the class
+		   "crop-image" which I use in the
+		   css and the javascript code.
+		-->
+		<div class="row" id="facility">
+			<div class="col-md-3">
+				<img class="crop-img" 
+				  src="img_gym5.jpg" 
+				  alt="graffittied building"/>
+				  <h4>Tredmill</h4> 
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" 
+				  src="img_gym2.jpg" 
+				  alt="display of cheese"/> 
+				  <h4>Legpress</h4>
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" 
+				  src="img_gym3.jpg" 
+				  alt="synethesizer workshop"/>
+				  <h4>Pull-up bar</h4> 
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" 
+				   src="img_gym4.jpg" 
+				   alt="City night"/> 
+				   <h4>Spin Bike</h4>
+			</div>
+
+		</div>
+		<!--
+			this is the large image which is
+			on a row of its own. 
+			I will change it's source in the 
+			javascript
+		-->
+		<h3>Facilities provided:</h3>
+		<div class="row">
+			<div class="col-md-3">
+				<img class="crop-img" 
+				  src="img_gymff1.jpg" 
+				  alt="graffittied building"/>
+				  <h4>Protein supplements</h4> 
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" 
+				  src="img_gymf2.jpg" 
+				  alt="display of cheese"/> 
+				  <h4>Cardio workout</h4>
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" 
+				  src="img_gymf3.jpg" 
+				  alt="synethesizer workshop"/>
+				  <h4>Diet plan</h4> 
+			</div>
+			<div class="col-md-3">
+				<img class="crop-img" 
+				   src="img_gymf4.jpg" 
+				   alt="City night"/> 
+				   <h4>Yoga sessions</h4>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<img id="bigImage" 
+					  class="large-img" 
+					  src="img_gym5.jpg" 
+					  alt="graffittied building"/> 
+				</div>
+			</div>
+		</div>
+
+		</div>
+    <section class="choseus-section spad" id="why">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Why chose us?</span>
+                        <h2>PUSH YOUR LIMITS FORWARD</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-034-stationary-bike"></span>
+                        <h4>Modern equipment</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            dolore facilisis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-033-juice"></span>
+                        <h4>Healthy nutrition plan</h4>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                            facilisis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-002-dumbell"></span>
+                        <h4>Professional training plan</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            dolore facilisis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-014-heart-beat"></span>
+                        <h4>Unique to your needs</h4>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                            facilisis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--    facilties-->
+<section id="pricing">
+       <div class="content-box-lg">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-12 text-center">
+                       <div class="horizontal-heading">
+                           <h5>Lovely Packages</h5>
+                           <h2>Our <strong>Pricing &amp; Facilities</strong></h2>
+                       </div>
+                   </div>
+               </div>
+               <div class="row">
+                   <!--BEGIN: TABLE 1-->
+                   <div class="col-md-4">
+                       <div class="pricing-table">
+                           <div class="type">
+                               <h4>Regular</h4>
+                           </div>
+                           <div class="price">
+                               <div class="row">
+                                   <div class="col-md-6">
+                                       <h2><span class="dollar">₹</span>1000 <br><span class="month">1 month</span></h2>
+                                   </div>
+                                   <div class="col-md-6">
+                                       <p>You will get all these awesome services with this great price. Get it now!</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <ul class="package">
+                               <li><i class="lni-check-mark-circle"></i>Cardio+GYM</li>
+                               <li><i class="lni-check-mark-circle"></i>Personal Trainer</li>
+                               <li><i class="lni-check-mark-circle"></i>Diet plan</li>
+                               <li><i class="lni-cross-circle"></i>Protein Supplements</li>
+                               <li><i class="lni-cross-circle"></i>Yoga Sessions</li>
+                           </ul>
+                       </div>
+                   </div>
+                   <!--END: TABLE 1-->
+                   <!--BEGIN: TABLE 2-->
+                   <div class="col-md-4">
+                       <div class="pricing-table pricing-table-black">
+                           <div class="type">
+                               <h4>Gold</h4>
+                           </div>
+                           <div class="price">
+                               <div class="row">
+                                   <div class="col-md-6">
+                                       <h2><span class="dollar">₹</span>2500 <br><span class="month">3 months</span></h2>
+                                   </div>
+                                   <div class="col-md-6">
+                                       <p>You will get all these awesome services with this great price. Get it now!</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <ul class="package">
+                               <li><i class="lni-check-mark-circle"></i>Cardio+GYM</li>
+                               <li><i class="lni-check-mark-circle"></i>Personal Trainer</li>
+                               <li><i class="lni-check-mark-circle"></i>Diet plan</li>
+                               <li><i class="lni-check-mark-circle"></i>Protein Supplements</li>
+                               <li><i class="lni-cross-circle"></i>Yoga Sessions</li>
+                           </ul>
+                           
+                       </div>
+                   </div>
+                   <!--END: TABLE 2-->
+                   <!--BEGIN: TABLE 3-->
+                   <div class="col-md-4">
+                       <div class="pricing-table">
+                           <div class="type">
+                               <h4>Premium</h4>
+                           </div>
+                           <div class="price">
+                               <div class="row">
+                                   <div class="col-md-6">
+                                       <h2><span class="dollar">₹</span>9500 <br><span class="month">1 Year</span></h2>
+                                   </div>
+                                   <div class="col-md-6">
+                                       <p>You will get all these awesome services with this great price. Get it now!</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <ul class="package">
+                               <li><i class="lni-check-mark-circle"></i>Cardio+GYM</li>
+                               <li><i class="lni-check-mark-circle"></i>Personal Trainer</li>
+                               <li><i class="lni-check-mark-circle"></i>Diet plan</li>
+                               <li><i class="lni-check-mark-circle"></i>Protein Supplements</li>
+                               <li><i class="lni-check-mark-circle"></i>Yoga Sessions</li>
+                           </ul>
+                           
+                       </div>
+                   </div>
+                   <!--END: TABLE 3-->
+               </div>
+           </div>
+       </div>
+   </section>
+          <!--    Conatact Us               <form id="forms"> -->
+          <section id="contact">
+        <div class="contact-form bg-primary-css p-2">
+            <h2 class="m-heading">Book An Appointment</h2>
+            <p>Please use the form below to book a meeting with us.</p>
+            <form id="forms">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="uname" name="uname" placeholder="Enter Name" title="Please Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for=email>Email Id:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email Id" title="Please Enter Your Email" required>
+                    </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" title="Please Enter Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" title="Please Enter Date For Meet" min="2020-12-19" required >
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" title="Please Enter Time For Meet" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="2" name="msg"placeholder="Enter Message" title="Enter Message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Book Appointment" title="Book An Appointment" class="btn btn-dark" id="bookapn">
+                </div>
+            </form>
+        </div>
+        <div>
+            <img src="map.jpg" alt="Google Map">
+        </div>
+    </section>
+    <!--    /Contact Us-->
+    <!--    FOOTER-->
+    <footer id="main-footer" class="bg-dark text-center py-1">
+        <div class="container">
+            <p>Copyright &copy; 2020 <span class="text-primary-css">PL Fitness Centre</span>, All Rights Reserved!</p>
+        </div>
+    </footer>
+    <!--    /FOOTER-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
